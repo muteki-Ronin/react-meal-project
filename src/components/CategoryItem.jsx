@@ -1,5 +1,5 @@
 // CORE
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function CategoryItem({
   idCategory,
@@ -17,9 +17,9 @@ function CategoryItem({
         <p>{strCategoryDescription.slice(0, 200)}...</p>
       </div>
       <div className="card-action">
-        <Link to={`/category/${idCategory}`} className="btn">
+        <NavLink to={`/category/${idCategory}`} className="btn">
           Watch category
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
