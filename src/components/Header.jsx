@@ -5,7 +5,7 @@ function Header() {
     <nav className="light-blue lighten-1">
       <div className="nav-wrapper">
         <NavLink to="/" className="brand-logo">
-          RECT Shop
+          REACT Meal
         </NavLink>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>

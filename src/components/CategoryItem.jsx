@@ -17,7 +17,7 @@ function CategoryItem({
         <p>{strCategoryDescription.slice(0, 200)}...</p>
       </div>
       <div className="card-action">
-        <NavLink to={`/category/${idCategory}`} className="btn">
+        <NavLink to={`/category/${strCategory}`} className="btn">
           Watch category
         </NavLink>
       </div>
