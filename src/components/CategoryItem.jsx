@@ -2,7 +2,7 @@
 import { NavLink } from "react-router-dom";
 
 function CategoryItem({
-  idCategory,
+  // idCategory,
   strCategory,
   strCategoryThumb,
   strCategoryDescription,
