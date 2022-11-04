@@ -40,6 +40,12 @@ iframe {
   height: 350px;
 }
 
+.btn_search {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+
 
 
 

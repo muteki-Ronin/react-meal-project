@@ -38,7 +38,7 @@ function Recipe() {
               {Object.keys(recipe).map((key) => {
                 if (key.includes("Ingredient") && recipe[key]) {
                   return (
-                    <tr>
+                    <tr key={key}>
                       <td>{recipe[key]}</td>
                       <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
                     </tr>
