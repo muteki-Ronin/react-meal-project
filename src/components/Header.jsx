@@ -1,18 +1,23 @@
-import { NavLink } from "react-router-dom";
+// PARTS
+import CustomLink from "./CustomLink";
 
 function Header() {
   return (
     <nav className="light-blue lighten-1">
       <div className="nav-wrapper">
-        <NavLink to="/" className="brand-logo">
+        <CustomLink type={"NavLink"} to="/" classCss={"brand-logo"}>
           REACT Meal
-        </NavLink>
+        </CustomLink>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <NavLink to="/about">About</NavLink>
+            <CustomLink type={"NavLink"} to="/about">
+              About
+            </CustomLink>
           </li>
           <li>
-            <NavLink to="/contacts">Contacts</NavLink>
+            <CustomLink type={"NavLink"} to="/contacts">
+              Contacts
+            </CustomLink>
           </li>
         </ul>
       </div>

@@ -1,8 +1,7 @@
-// CORE
-import { NavLink } from "react-router-dom";
+// PARTS
+import CustomLink from "./CustomLink";
 
 function CategoryItem({
-  // idCategory,
   strCategory,
   strCategoryThumb,
   strCategoryDescription,
@@ -17,9 +16,13 @@ function CategoryItem({
         <p>{strCategoryDescription.slice(0, 200)}...</p>
       </div>
       <div className="card-action">
-        <NavLink to={`/category/${strCategory}`} className="btn">
+        <CustomLink
+          type={"NavLink"}
+          to={`/category/${strCategory}`}
+          classCss={"btn"}
+        >
           Watch category
-        </NavLink>
+        </CustomLink>
       </div>
     </div>
   );

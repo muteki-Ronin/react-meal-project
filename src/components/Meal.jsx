@@ -1,5 +1,5 @@
-// CORE
-import { NavLink } from "react-router-dom";
+// PARTS
+import CustomLink from "./CustomLink";
 
 function Meal({ strMeal, strMealThumb, idMeal }) {
   return (
@@ -11,9 +11,9 @@ function Meal({ strMeal, strMealThumb, idMeal }) {
         <span className="card-title">{strMeal}</span>
       </div>
       <div className="card-action">
-        <NavLink to={`/meal/${idMeal}`} className="btn">
+        <CustomLink type={"NavLink"} to={`/meal/${idMeal}`} classCss={"btn"}>
           Watch recipe
-        </NavLink>
+        </CustomLink>
       </div>
     </div>
   );
